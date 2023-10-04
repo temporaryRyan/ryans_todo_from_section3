@@ -245,7 +245,7 @@
       </details>
 
     - Our views use the `SelectList` passed down from the controller to create a dropdown selection.  
-       <details><summary><code>ToDoList/Views/Create.cs</code></summary> 
+       <details><summary><code>ToDoList/Views/Create.cshtml</code></summary> 
 
       ```c#
       @{

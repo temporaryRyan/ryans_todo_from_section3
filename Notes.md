@@ -189,7 +189,7 @@
 
 <hr />
 
-## CREATING A ONE-TO-MANY RELATIONSHIP BETWEEN TWO MODELS.
+# CREATING A ONE-TO-MANY RELATIONSHIP BETWEEN TWO MODELS.
 1. Decide which Model is the "One" and which is the "Many".
 2. In the "One" class, add "collection navigation property". This is just a `List` of instances of the other class.
     <details><summary><code>ToDoList/Models/Category.cs</code></summary>

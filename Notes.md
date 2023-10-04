@@ -99,7 +99,7 @@
       ```
       </details>
 
-      <details><summary><code>ToDoList/Properties/launchSettings.json.csproj</code></summary> 
+      <details><summary><code>ToDoList/Properties/launchSettings.json</code></summary> 
 
       ```json
       {

@@ -20,9 +20,11 @@
     - `$ git commit -m "add .gitignore"` 
 6. Navigate to project directory
     - `$ cd TodoList` 
-7. Create configuration files: 
+7. Create required directories: 
+    - `$ mkdir Controllers Models Properties Views wwwroot`
+8. Create configuration files: 
     - `$ touch Program.cs ToDoList.csproj appsettings.json Properties/launchSettings.json`
-8. Add required content to these files.
+9. Add required content to these files.
 
       <details><summary><code>ToDoList/ToDoList.csproj</code></summary> 
 
@@ -127,10 +129,8 @@
       ```
       </details>
 
-9. Optional but its a good idea to test your configuration at this point with: 
+10. Optional but its a good idea to test your configuration at this point with: 
     - `$ dotnet build`
-10. Create required directories: 
-    - `$ mkdir Controllers Models Properties Views wwwroot`
 11. Build Models
     -  Model Naming Conventions for EF Core:
         - Column names in DB must match property names of Models in the app. These are case-sensitive.

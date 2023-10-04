@@ -21,7 +21,7 @@
 6. Navigate to project directory
     - `$ cd TodoList` 
 7. Create configuration files: 
-    - `$ touch Program.cs ToDoList.csproj appsettings.json`
+    - `$ touch Program.cs ToDoList.csproj appsettings.json Properties/launchSettings.json`
 8. Add required content to these files.
 
       <details><summary><code>ToDoList/ToDoList.csproj</code></summary> 
@@ -34,8 +34,8 @@
         </PropertyGroup>
 
         <ItemGroup>
-          <PackageReference Include="Microsoft. EntityFrameworkCore" Version="6.    0.0" />
-          <PackageReference Include="Pomelo.  EntityFrameworkCore.MySql"    Version="6.0.0" />
+          <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+          <PackageReference Include="Pomelo.EntityFrameworkCore.MySql"Version="6.0.0" />
         </ItemGroup>
 
       </Project>
@@ -95,6 +95,34 @@
         "ConnectionStrings": {
             "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DATABASE-NAME];uid=root;pwd=[YOUR-MySQL-PASSWORD];"
           }
+      }
+      ```
+      </details>
+
+      <details><summary><code>ToDoList/Properties/launchSettings.json.csproj</code></summary> 
+
+      ```json
+      {
+          "profiles": {
+            "development": {
+            "commandName": "Project",
+            "dotnetRunMessages": true,
+            "launchBrowser": true,
+            "applicationUrl": "https://localhost:5001;http://localhost:5000",
+            "environmentVariables": {
+              "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+          },
+          "production": {
+             "commandName": "Project",
+             "dotnetRunMessages": true,
+             "launchBrowser": true,
+             "applicationUrl": "https://localhost:5001;http://localhost:5000",
+             "environmentVariables": {
+               "ASPNETCORE_ENVIRONMENT": "Production"
+             }
+           }
+         }
       }
       ```
       </details>

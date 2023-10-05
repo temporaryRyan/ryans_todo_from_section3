@@ -193,7 +193,7 @@
     <details><summary><code>ToDoList/Models/Category.cs</code></summary>
 
       ```c#
-      using System.Collections.Generi   
+      using System.Collections.Generic   
       namespace ToDoList.Models
       {
         public class Category

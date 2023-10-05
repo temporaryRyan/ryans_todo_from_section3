@@ -129,9 +129,7 @@
       ```
       </details>
 
-10. Optional but its a good idea to test your configuration at this point with: 
-    - `$ dotnet build`
-11. Build Models
+10. Build Models
     -  Model Naming Conventions for EF Core:
         - Column names in DB must match property names of Models in the app. These are case-sensitive.
         - For a property to be recognized as a primary key, we need to name the property `Id` or `[ClassName]Id`.
@@ -166,7 +164,7 @@
       ```
       </details>
 
-12. Create Database Context and Entities for the Models.
+11. Create Database Context and Entities for the Models.
     <details><summary><code>ToDoList/Models/ToDoListContext.cs</code></summary> 
 
     ```c#
@@ -185,7 +183,7 @@
     ```
     </details>
 
-13. Build Controllers and Views.
+12. Build Controllers and Views.
 
 <hr />
 
